@@ -1,0 +1,68 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: #000;
+  color: white;
+  font-family: sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.container {
+  text-align: center;
+}
+
+.gift-box {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  margin: 20px auto;
+  cursor: pointer;
+  transition: transform 1s ease;
+}
+
+.box {
+  background: #ff4d4d;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  border-radius: 10px;
+}
+
+.lid {
+  background: #cc0000;
+  width: 100%;
+  height: 30px;
+  position: absolute;
+  top: -30px;
+  border-radius: 10px 10px 0 0;
+  transition: top 1s ease, transform 1s ease;
+  z-index: 2;
+}
+
+.ribbon {
+  position: absolute;
+  width: 30px;
+  height: 100%;
+  background: gold;
+  left: 60px;
+  top: 0;
+  z-index: 1;
+}
+
+#message {
+  margin-top: 30px;
+  font-size: 1.2em;
+  color: #ffcccc;
+  white-space: pre-line;
+  padding: 0 15px;
+}
+
+.hidden {
+  display: none;
+}
